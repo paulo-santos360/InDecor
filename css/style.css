@@ -26,6 +26,11 @@
     color: var(--text-color);
 }
 
+#disclaimer h2,
+#disclaimer .event-date{
+    color: var(--primary);
+}
+
 #disclaimer h2{
     font-size: 3em;
     margin-bottom: 1em;
@@ -33,4 +38,67 @@
 
 #disclaimer .about-event{
     font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;/*Isso serve para quebrar a linha*/
+    font-weight: bold;
+    margin-bottom: 1em;
 }
+
+#disclaimer p{
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+#disclaimer .event-date{
+    font-weight: bold;
+}
+
+/*formulario*/
+#subscription-form{
+    background-color: var(--secondary);
+    padding: 1em;
+    margin: 5px 0px;
+    max-width: 22%;
+    height: 500px;
+}
+
+#subscription-form p{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label{
+    color: var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;/*para não ficar selecionado o campo do input so dentro*/
+}
+    
+.btn{
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    margin: 6px 0px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
