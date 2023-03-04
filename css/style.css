@@ -290,16 +290,27 @@
     font-weight: bolder;
 }
 /*Mobile*/
-@media (max-width: 450px) {
+@media (min-width: 425px) and (max-width: 781px) { 
     .btn{
         opacity: 1;
     }
+    #event-description{
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+    }
     /*Event Form*/
-    #event-subscription{
+     #event-subscription{
+        display: flex;
         flex-direction: column;
         height: auto;
+        width: 100vh;
+    }
+    .about-event{
+        margin-top: 226px;
     }
     #disclaimer{
+        margin-top: -244px;
         padding: 2em;
     }
     #disclaimer h2{
@@ -344,8 +355,18 @@
     }
     #about-location p{
         display: none;
-    }
+    } 
     /*Events details container*/
+     #key-benefits{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 27px -598px;
+    }
+    #key-benefits{
+        margin-top: 20px;
+    }
+
     .detail{
         flex-direction: column;
         margin-bottom: .5em;
@@ -373,6 +394,8 @@
     }
     #cta .btn{
         width: 80%;
-    }
+    }  
 
-}
+} 
+
+    
