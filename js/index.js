@@ -1,1 +1,1 @@
-AOS.init();
+yAOS.init();
